@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer</title>
+    <link rel="stylesheet" href="css/style10.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customizable Keyboard Trainer</h1>
+        
+        <div class="settings">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (Short Words)</option>
+                <option value="medium">Medium (Longer Words)</option>
+                <option value="hard">Hard (Special Characters)</option>
+            </select>
+            <button onclick="generateText()">New Text</button>
+        </div>
+
+        <div class="text-container">
+            <p id="text-display"></p>
+            <input type="text" id="user-input" placeholder="Start typing here..." autofocus>
+        </div>
+
+        <div class="results">
+            <p>Time: <span id="timer">0</span> sec</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+
+        <button onclick="restartTest()">Restart</button>
+    </div>
+
+    <script src="js/script10.js"></script>
+</body>
+</html>

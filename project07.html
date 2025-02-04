@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Calculator</title>
+    <link rel="stylesheet" href="css/style07.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Virtual Calculator</h1>
+        <div class="display">
+            <input type="text" id="calc-display" disabled>
+        </div>
+        <div class="buttons">
+            <button class="btn func" onclick="clearDisplay()">C</button>
+            <button class="btn func" onclick="backspace()">←</button>
+            <button class="btn func" onclick="calculatePercentage()">%</button>
+            <button class="btn operator" onclick="appendOperator('/')">÷</button>
+
+            <button class="btn" onclick="appendNumber('7')">7</button>
+            <button class="btn" onclick="appendNumber('8')">8</button>
+            <button class="btn" onclick="appendNumber('9')">9</button>
+            <button class="btn operator" onclick="appendOperator('*')">×</button>
+
+            <button class="btn" onclick="appendNumber('4')">4</button>
+            <button class="btn" onclick="appendNumber('5')">5</button>
+            <button class="btn" onclick="appendNumber('6')">6</button>
+            <button class="btn operator" onclick="appendOperator('-')">−</button>
+
+            <button class="btn" onclick="appendNumber('1')">1</button>
+            <button class="btn" onclick="appendNumber('2')">2</button>
+            <button class="btn" onclick="appendNumber('3')">3</button>
+            <button class="btn operator" onclick="appendOperator('+')">+</button>
+
+            <button class="btn" onclick="appendNumber('0')">0</button>
+            <button class="btn" onclick="appendDecimal()">.</button>
+            <button class="btn func" onclick="calculateSquareRoot()">√</button>
+            <button class="btn equal" onclick="calculateResult()">=</button>
+
+            <!-- New Memory Buttons -->
+            <button class="btn memory" onclick="memoryAdd()">M+</button>
+            <button class="btn memory" onclick="memoryRecall()">MR</button>
+            <button class="btn memory" onclick="memoryClear()">MC</button>
+        </div>
+    </div>
+
+    <script src="js/script07.js"></script>
+</body>
+</html>
